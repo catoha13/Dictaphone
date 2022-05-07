@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6901C12826B6BA0096711E /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901C02826B6BA0096711E /* RecordsViewController.swift */; };
+		AC6901C32826B6D60096711E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901C22826B6D60096711E /* DetailsViewController.swift */; };
 		ACAE2E0B2826A84900F74A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE2E0A2826A84900F74A61 /* AppDelegate.swift */; };
 		ACAE2E0D2826A84900F74A61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE2E0C2826A84900F74A61 /* SceneDelegate.swift */; };
-		ACAE2E0F2826A84900F74A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE2E0E2826A84900F74A61 /* ViewController.swift */; };
+		ACAE2E0F2826A84900F74A61 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE2E0E2826A84900F74A61 /* StartViewController.swift */; };
 		ACAE2E122826A84900F74A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAE2E102826A84900F74A61 /* Main.storyboard */; };
 		ACAE2E142826A84D00F74A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAE2E132826A84D00F74A61 /* Assets.xcassets */; };
 		ACAE2E172826A84D00F74A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAE2E152826A84D00F74A61 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC6901C02826B6BA0096711E /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		AC6901C22826B6D60096711E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		ACAE2E072826A84900F74A61 /* Dictaphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictaphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAE2E0A2826A84900F74A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACAE2E0C2826A84900F74A61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACAE2E0E2826A84900F74A61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACAE2E0E2826A84900F74A61 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		ACAE2E112826A84900F74A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACAE2E132826A84D00F74A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACAE2E162826A84D00F74A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC6901BF2826B6750096711E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE2E0E2826A84900F74A61 /* StartViewController.swift */,
+				AC6901C02826B6BA0096711E /* RecordsViewController.swift */,
+				AC6901C22826B6D60096711E /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		ACAE2DFE2826A84900F74A61 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +70,9 @@
 		ACAE2E092826A84900F74A61 /* Dictaphone */ = {
 			isa = PBXGroup;
 			children = (
+				AC6901BF2826B6750096711E /* Controllers */,
 				ACAE2E0A2826A84900F74A61 /* AppDelegate.swift */,
 				ACAE2E0C2826A84900F74A61 /* SceneDelegate.swift */,
-				ACAE2E0E2826A84900F74A61 /* ViewController.swift */,
 				ACAE2E102826A84900F74A61 /* Main.storyboard */,
 				ACAE2E132826A84D00F74A61 /* Assets.xcassets */,
 				ACAE2E152826A84D00F74A61 /* LaunchScreen.storyboard */,
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACAE2E0F2826A84900F74A61 /* ViewController.swift in Sources */,
+				ACAE2E0F2826A84900F74A61 /* StartViewController.swift in Sources */,
 				ACAE2E0B2826A84900F74A61 /* AppDelegate.swift in Sources */,
 				ACAE2E0D2826A84900F74A61 /* SceneDelegate.swift in Sources */,
+				AC6901C12826B6BA0096711E /* RecordsViewController.swift in Sources */,
+				AC6901C32826B6D60096711E /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +320,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +348,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
