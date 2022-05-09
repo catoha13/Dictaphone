@@ -9,21 +9,30 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    //MARK: IBOutlets
+    @IBOutlet weak var recordNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton!
+    
+    //MARK: var/let
+    var recorder: AGAudioRecorder = AGAudioRecorder(withFileName: "newRecord")
+    var time = ""
+    var name = ""
+    var date = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        recordNameLabel.text = name
+        dateLabel.text = date
+        timeLabel.text = time
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: IBActions
+    @IBAction func playButton(_ sender: UIButton) {
+        recorder.doPlay()
     }
-    */
+    
 
 }

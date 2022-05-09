@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		AC6901C12826B6BA0096711E /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901C02826B6BA0096711E /* RecordsViewController.swift */; };
 		AC6901C32826B6D60096711E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901C22826B6D60096711E /* DetailsViewController.swift */; };
+		AC6901C62826B8E00096711E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901C52826B8E00096711E /* TableViewCell.swift */; };
+		AC6901C92826B9F10096711E /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901C82826B9F10096711E /* Record.swift */; };
+		AC6901CC2826BC6C0096711E /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901CB2826BC6C0096711E /* UserDefaults+Extension.swift */; };
+		AC6901CE2826BC830096711E /* StartVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901CD2826BC830096711E /* StartVC+Extension.swift */; };
+		AC6901D02826BCC90096711E /* RecordsVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901CF2826BCC90096711E /* RecordsVC+Extension.swift */; };
+		AC6901D5282803C90096711E /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6901D4282803C80096711E /* AudioRecorder.swift */; };
+		AC6A8FA4282847FB00C1BE4E /* DetailsVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8FA3282847FB00C1BE4E /* DetailsVC+Extension.swift */; };
 		ACAE2E0B2826A84900F74A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE2E0A2826A84900F74A61 /* AppDelegate.swift */; };
 		ACAE2E0D2826A84900F74A61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE2E0C2826A84900F74A61 /* SceneDelegate.swift */; };
 		ACAE2E0F2826A84900F74A61 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE2E0E2826A84900F74A61 /* StartViewController.swift */; };
@@ -20,6 +27,13 @@
 /* Begin PBXFileReference section */
 		AC6901C02826B6BA0096711E /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		AC6901C22826B6D60096711E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		AC6901C52826B8E00096711E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		AC6901C82826B9F10096711E /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		AC6901CB2826BC6C0096711E /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		AC6901CD2826BC830096711E /* StartVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartVC+Extension.swift"; sourceTree = "<group>"; };
+		AC6901CF2826BCC90096711E /* RecordsVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordsVC+Extension.swift"; sourceTree = "<group>"; };
+		AC6901D4282803C80096711E /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		AC6A8FA3282847FB00C1BE4E /* DetailsVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsVC+Extension.swift"; sourceTree = "<group>"; };
 		ACAE2E072826A84900F74A61 /* Dictaphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictaphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAE2E0A2826A84900F74A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACAE2E0C2826A84900F74A61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +65,34 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		AC6901C42826B8D20096711E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC6901C52826B8E00096711E /* TableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AC6901CA2826BC580096711E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC6901CB2826BC6C0096711E /* UserDefaults+Extension.swift */,
+				AC6901CD2826BC830096711E /* StartVC+Extension.swift */,
+				AC6901CF2826BCC90096711E /* RecordsVC+Extension.swift */,
+				AC6A8FA3282847FB00C1BE4E /* DetailsVC+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC6901D12827A2760096711E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC6901D4282803C80096711E /* AudioRecorder.swift */,
+				AC6901C82826B9F10096711E /* Record.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		ACAE2DFE2826A84900F74A61 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +112,9 @@
 		ACAE2E092826A84900F74A61 /* Dictaphone */ = {
 			isa = PBXGroup;
 			children = (
+				AC6901D12827A2760096711E /* Classes */,
+				AC6901CA2826BC580096711E /* Extensions */,
+				AC6901C42826B8D20096711E /* Cells */,
 				AC6901BF2826B6750096711E /* Controllers */,
 				ACAE2E0A2826A84900F74A61 /* AppDelegate.swift */,
 				ACAE2E0C2826A84900F74A61 /* SceneDelegate.swift */,
@@ -153,9 +198,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACAE2E0F2826A84900F74A61 /* StartViewController.swift in Sources */,
+				AC6901D02826BCC90096711E /* RecordsVC+Extension.swift in Sources */,
 				ACAE2E0B2826A84900F74A61 /* AppDelegate.swift in Sources */,
+				AC6901CE2826BC830096711E /* StartVC+Extension.swift in Sources */,
 				ACAE2E0D2826A84900F74A61 /* SceneDelegate.swift in Sources */,
+				AC6901D5282803C90096711E /* AudioRecorder.swift in Sources */,
+				AC6901C62826B8E00096711E /* TableViewCell.swift in Sources */,
+				AC6A8FA4282847FB00C1BE4E /* DetailsVC+Extension.swift in Sources */,
+				AC6901C92826B9F10096711E /* Record.swift in Sources */,
 				AC6901C12826B6BA0096711E /* RecordsViewController.swift in Sources */,
+				AC6901CC2826BC6C0096711E /* UserDefaults+Extension.swift in Sources */,
 				AC6901C32826B6D60096711E /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
